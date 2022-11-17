@@ -767,7 +767,8 @@ def process(ctx):
 
     for collection_key in collections:
         collection = collections[collection_key]
-
+        collection_full_name = collection['collection_full_name']
+        
         ligands_to_skip = []
 
         for ligand_key in collection['ligands']:
